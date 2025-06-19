@@ -141,7 +141,7 @@ aside img
     margin-top: 15px;
     height: 200px;
     border-radius: 5px;
-    background: url('/assets/img/univers.png') repeat;
+    background-image: url('./assets/img/univers.png') repeat;
     position: relative;
     box-shadow: 0px 4px 4px #1c1a19;
     margin-bottom: 25px;
@@ -168,7 +168,7 @@ aside img
     position: absolute;
     right: 5px;
     bottom: 5px;
-    background: url('/assets/img/univers.png') repeat-x;
+    background: url('./assets/img/univers.png') repeat-x;
     border: 1px solid #760001;
     border-radius: 5px;
     font-size: 1.2em;
