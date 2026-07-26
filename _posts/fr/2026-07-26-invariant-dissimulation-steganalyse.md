@@ -120,6 +120,13 @@ Un invariant qui fonctionne bien sur un jeu de données propre n'est pas magique
 
 Ce dernier point est le plus intéressant à mes yeux : plus une méthode de dissimulation est pensée pour être indétectable statistiquement, moins un invariant "simple" comme celui-ci suffit. C'est précisément ce qui m'a donné envie de continuer dans cette direction après le TIPE — je travaille aujourd'hui sur des méthodes à base de *transformers* pour essayer d'identifier des signatures de dissimulation plus fines que ce que des statistiques classiques peuvent capter. Ce sera probablement le sujet d'un prochain article.
 
+## Documents
+
+Pour qui veut aller plus loin que ce résumé, les deux documents originaux du TIPE sont téléchargeables :
+
+- 📊 [Support de présentation complet]({{ '/assets/pdf/notes/tipe-steganalyse/TIPE-2024-2025-presentation.pdf' | relative_url }}) (schémas, mesures détaillées, courbes d'entraînement du CNN)
+- 📄 [MCOT — motivation, positionnement thématique et bibliographie commentée]({{ '/assets/pdf/notes/tipe-steganalyse/MCOT.pdf' | relative_url }})
+
 ## Pour aller plus loin
 
-Ce travail doit beaucoup à la théorie de l'information de Shannon, à la modélisation de la sécurité stéganographique de Cachin, et à l'ouvrage de référence de Fridrich sur la stéganographie dans les médias numériques — toutes les références précises sont dans le dossier de mon TIPE.
+Ce travail doit beaucoup à la théorie de l'information de Shannon, à la modélisation de la sécurité stéganographique de Cachin, et à l'ouvrage de référence de Fridrich sur la stéganographie dans les médias numériques — toutes les références précises sont dans le MCOT ci-dessus.
