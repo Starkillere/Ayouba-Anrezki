@@ -50,7 +50,7 @@ Points importants :
 
 Pour **chaque article**, deux éléments sont désormais standards, pas optionnels :
 
-1. **Une image de couverture** (`cover:` en front-matter, fichier SVG dans `assets/img/covers/<slug>.svg`) — une illustration originale sur le thème de l'article (dégradés, effet glow, motifs en ligne fine liés au sujet), dans le même esprit visuel que le site d'inspiration (jingmatrix.github.io), mais produite en SVG pur (pas de génération d'image IA disponible dans cet environnement). Elle est affichée automatiquement en haut de l'article par `_layouts/post.html` si le champ `cover` est renseigné.
+1. **Une image de couverture** (`cover:` en front-matter, fichier SVG dans `assets/img/covers/<slug>.svg`) — une illustration originale sur le thème de l'article (dégradés, effet glow, motifs en ligne fine liés au sujet), dans le même esprit visuel que le site d'inspiration (jingmatrix.github.io), mais produite en SVG pur (pas de génération d'image IA disponible dans cet environnement). Elle est affichée automatiquement en haut de l'article par `_layouts/post.html`, **et** en vignette dans les listes d'articles (accueil, page catégorie) par `_includes/post-card.html`, si le champ `cover` est renseigné.
 2. **Si l'article référence des documents téléchargeables** (PDF, notes, etc.), les lier via un bloc `<div class="doc-card">...</div>` placé **juste après le front-matter, avant le premier paragraphe** — pas en bas de page.
 
 ## Formulaire de contact
