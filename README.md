@@ -27,7 +27,12 @@ category: recherche-maths   # slug canonique, identique en FR/EN — voir _data/
 tags: [tag-un, tag-deux]
 excerpt: "Résumé affiché dans les listes d'articles."
 permalink: /fr/recherche-maths/titre-de-larticle/
+cover: covers/titre-de-larticle.svg   # image de couverture, voir convention plus bas
 ---
+
+<div class="doc-card">
+  <a href="{{ '/assets/pdf/notes/.../mon-document.pdf' | relative_url }}">📄 Nom du document (PDF)</a>
+</div>
 
 Contenu en Markdown. Maths inline : `$a^2+b^2=c^2$` ; en bloc : `$$...$$`.
 ```
@@ -39,7 +44,14 @@ Points importants :
 - `permalink` est à écrire à la main pour chaque post, avec le préfixe `/fr/` ou `/en/`.
 - Maths : utiliser `$...$` pour l'inline et `$$...$$` pour les blocs — **pas** `\( ... \)`, que Kramdown corrompt dès qu'il y a des parenthèses imbriquées à l'intérieur (ex. `\pi(x)`) ; vérifié par test réel lors de la mise en place.
 - Pour un schéma en diagramme, utiliser un bloc de code ```` ```mermaid ```` — un petit script (`assets/js/mermaid-rewrite.js`) se charge de le rendre au chargement de la page.
-- Pour des notes de cours longues (ex. exportées depuis Typst), déposer le PDF dans `assets/pdf/notes/` et le lier depuis l'article.
+- Pour des notes de cours longues (ex. exportées depuis Typst) ou des documents à joindre à un article, déposer le PDF dans `assets/pdf/notes/<slug-article>/` et le lier depuis l'article.
+
+### Convention systématique : couverture + documents
+
+Pour **chaque article**, deux éléments sont désormais standards, pas optionnels :
+
+1. **Une image de couverture** (`cover:` en front-matter, fichier SVG dans `assets/img/covers/<slug>.svg`) — une illustration originale sur le thème de l'article (dégradés, effet glow, motifs en ligne fine liés au sujet), dans le même esprit visuel que le site d'inspiration (jingmatrix.github.io), mais produite en SVG pur (pas de génération d'image IA disponible dans cet environnement). Elle est affichée automatiquement en haut de l'article par `_layouts/post.html` si le champ `cover` est renseigné.
+2. **Si l'article référence des documents téléchargeables** (PDF, notes, etc.), les lier via un bloc `<div class="doc-card">...</div>` placé **juste après le front-matter, avant le premier paragraphe** — pas en bas de page.
 
 ## Formulaire de contact
 
