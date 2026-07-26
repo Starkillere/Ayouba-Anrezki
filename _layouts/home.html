@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% assign lang = page.lang | default: site.default_lang %}
+<section class="hero">
+  {{ content }}
+</section>
+
+<section class="post-list">
+  {% assign posts = site.posts | where: "lang", lang | sort: "date" | reverse %}
+  {% if posts.size == 0 %}
+    <p class="empty-state">
+      {% if lang == "fr" %}
+        Aucun article publié pour l'instant — la structure du site est prête, le contenu arrive bientôt.
+      {% else %}
+        No posts yet — the site structure is ready, content is coming soon.
+      {% endif %}
+    </p>
+  {% else %}
+    {% for post in posts %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+  {% endif %}
+</section>

@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign catinfo = site.data.categories[page.category][lang] %}
+<article class="post">
+  <header class="post-header">
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B %Y" }}</time>
+      <a class="badge" href="{{ '/' | append: lang | append: '/' | append: catinfo.slug | append: '/' | relative_url }}">{{ catinfo.label }}</a>
+    </p>
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  {% if page.tags.size > 0 %}
+  <footer class="post-tags">
+    {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+  </footer>
+  {% endif %}
+</article>

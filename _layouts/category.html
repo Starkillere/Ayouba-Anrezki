@@ -1,0 +1,26 @@
+---
+layout: default
+---
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign catinfo = site.data.categories[page.category][lang] %}
+<section class="category-header">
+  <h1>{{ catinfo.label }}</h1>
+  {{ content }}
+</section>
+
+<section class="post-list">
+  {% assign posts = site.posts | where: "lang", lang | where: "category", page.category | sort: "date" | reverse %}
+  {% if posts.size == 0 %}
+    <p class="empty-state">
+      {% if lang == "fr" %}
+        Aucun article dans cette catégorie pour l'instant.
+      {% else %}
+        No posts in this category yet.
+      {% endif %}
+    </p>
+  {% else %}
+    {% for post in posts %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+  {% endif %}
+</section>

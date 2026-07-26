@@ -1,0 +1,17 @@
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign other_lang = "en" %}
+{% if lang == "en" %}{% assign other_lang = "fr" %}{% endif %}
+{% assign other_label = "Français" %}
+{% if other_lang == "en" %}{% assign other_label = "English" %}{% endif %}
+
+{% assign translation = nil %}
+{% if page.ref %}
+  {% assign all_content = site.posts | concat: site.pages %}
+  {% assign translation = all_content | where: "ref", page.ref | where_exp: "item", "item.lang != lang" | first %}
+{% endif %}
+
+{% if translation %}
+  <a class="lang-switch" href="{{ translation.url | relative_url }}" lang="{{ other_lang }}">{{ other_label }}</a>
+{% else %}
+  <a class="lang-switch" href="{{ '/' | append: other_lang | append: '/' | relative_url }}" lang="{{ other_lang }}">{{ other_label }}</a>
+{% endif %}

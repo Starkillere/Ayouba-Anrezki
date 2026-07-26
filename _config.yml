@@ -1,0 +1,51 @@
+title: Ayouba Anrezki
+description: >-
+  Mathématiques, physique, informatique théorique et créations —
+  le blog d'Ayouba Anrezki.
+url: "https://starkillere.github.io"
+baseurl: "/Ayouba-Anrezki"
+
+author:
+  name: Ayouba Anrezki
+  email: anrezki.ayouba@proton.me
+  github: https://github.com/Starkillere
+
+default_lang: fr
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: "_posts/fr"
+    values:
+      lang: fr
+      layout: post
+  - scope:
+      path: "_posts/en"
+    values:
+      lang: en
+      layout: post
+  - scope:
+      path: "fr"
+    values:
+      lang: fr
+  - scope:
+      path: "en"
+    values:
+      lang: en
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - planning/
+  - node_modules/
+  - vendor/

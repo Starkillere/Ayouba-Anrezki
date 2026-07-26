@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Carte de visite - Anrezki Ayouba</title>
+  <title>Contact - Anrezki Ayouba</title>
   <style>
     body {
       background: #f0f2f5;
@@ -11,26 +11,29 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
+      padding: 2rem 1rem;
     }
     .card {
       background: #fff;
-      padding: 2rem 3rem;
+      padding: 2rem 2.5rem;
       border-radius: 12px;
       box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-      max-width: 320px;
-      text-align: center;
+      max-width: 420px;
+      width: 100%;
     }
     h1 {
       margin-bottom: 0.2rem;
       color: #004080;
+      text-align: center;
     }
     p.role {
       color: #666;
       font-style: italic;
       margin-top: 0;
       margin-bottom: 1.5rem;
+      text-align: center;
     }
     .contact-info a {
       display: block;
@@ -48,7 +51,46 @@
       color: #333;
       margin-top: 1rem;
       margin-bottom: 0.3rem;
-      text-align: left;
+    }
+    form {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    label {
+      font-size: 0.9rem;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+    input, textarea {
+      font: inherit;
+      padding: 0.5rem 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+    button {
+      margin-top: 0.3rem;
+      padding: 0.6rem;
+      background: #004080;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #002d5c;
+    }
+    .honeypot {
+      position: absolute;
+      left: -9999px;
     }
   </style>
 </head>
@@ -59,22 +101,30 @@
     <p class="role">Étudiant & freelancer</p>
 
     <div class="contact-info">
-      <div>
-        <div class="label">Emails :</div>
-        <a href="mailto:anrezkia531@gmail.com">anrezkia531@gmail.com</a>
-        <a href="mailto:anrezki.ayouba@proton.me">anrezki.ayouba@proton.me</a>
-      </div>
-
-      <div>
-        <div class="label">Discord :</div>
-        <a href="#" target="_blank" rel="noopener noreferrer">Mon Discord</a>
-      </div>
-
-      <div>
-        <div class="label">LinkedIn :</div>
-        <a href="#" target="_blank" rel="noopener noreferrer">Mon LinkedIn</a>
-      </div>
+      <div class="label">Email :</div>
+      <a href="mailto:anrezki.ayouba@proton.me">anrezki.ayouba@proton.me</a>
+      <div class="label">GitHub :</div>
+      <a href="https://github.com/Starkillere" target="_blank" rel="noopener noreferrer">github.com/Starkillere</a>
     </div>
+
+    <!-- TODO(Ayouba) : remplacer "xxxxxxxx" par l'id de ton formulaire Formspree (https://formspree.io) -->
+    <form action="https://formspree.io/f/xxxxxxxx" method="POST">
+      <label>
+        Nom
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Message
+        <textarea name="message" required></textarea>
+      </label>
+      <input class="honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="_subject" value="Nouveau message depuis le site">
+      <button type="submit">Envoyer</button>
+    </form>
   </div>
 
 </body>

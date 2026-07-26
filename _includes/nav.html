@@ -1,0 +1,10 @@
+{% assign lang = page.lang | default: site.default_lang %}
+<nav class="site-nav">
+  <ul>
+    <li><a href="{{ '/' | append: lang | append: '/' | relative_url }}">{% if lang == "fr" %}Accueil{% else %}Home{% endif %}</a></li>
+    {% for entry in site.data.categories %}
+      {% assign catdata = entry[1][lang] %}
+      <li><a href="{{ '/' | append: lang | append: '/' | append: catdata.slug | append: '/' | relative_url }}">{{ catdata.label }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

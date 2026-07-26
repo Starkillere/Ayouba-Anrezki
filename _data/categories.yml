@@ -1,0 +1,31 @@
+# Source unique des libellés et slugs par langue pour chaque catégorie.
+# order détermine l'ordre d'affichage dans la navigation.
+journal:
+  order: 1
+  fr: { label: "Journal", slug: "journal" }
+  en: { label: "Journal", slug: "journal" }
+
+recherche-maths:
+  order: 2
+  fr: { label: "Recherche & Maths", slug: "recherche-maths" }
+  en: { label: "Research & Math", slug: "research-math" }
+
+physique-astro:
+  order: 3
+  fr: { label: "Physique & Astro", slug: "physique-astro" }
+  en: { label: "Physics & Astro", slug: "physics-astro" }
+
+informatique-ia:
+  order: 4
+  fr: { label: "Informatique & IA", slug: "informatique-ia" }
+  en: { label: "Computer Science & AI", slug: "computer-science-ai" }
+
+entrepreneuriat:
+  order: 5
+  fr: { label: "Entrepreneuriat", slug: "entrepreneuriat" }
+  en: { label: "Entrepreneurship", slug: "entrepreneurship" }
+
+creations:
+  order: 6
+  fr: { label: "Créations", slug: "creations" }
+  en: { label: "Creations", slug: "creations" }

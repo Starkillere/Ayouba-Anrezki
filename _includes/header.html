@@ -1,0 +1,12 @@
+{% assign lang = page.lang | default: site.default_lang %}
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-brand" href="{{ '/' | append: lang | append: '/' | relative_url }}">{{ site.author.name }}</a>
+    {% include nav.html %}
+    <div class="header-actions">
+      {% include lang-switcher.html %}
+      <a class="header-link" href="{{ '/cv.html' | relative_url }}">CV</a>
+      <a class="header-link" href="{{ '/Contact.html' | relative_url }}">{% if lang == "fr" %}Contact{% else %}Contact{% endif %}</a>
+    </div>
+  </div>
+</header>
