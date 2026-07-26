@@ -4,6 +4,10 @@ layout: default
 {% assign lang = page.lang | default: site.default_lang %}
 {% assign catinfo = site.data.categories[page.category][lang] %}
 <article class="post">
+  {% if page.cover %}
+  <img class="post-cover" src="{{ '/assets/img/' | append: page.cover | relative_url }}" alt="" role="presentation">
+  {% endif %}
+
   <header class="post-header">
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B %Y" }}</time>

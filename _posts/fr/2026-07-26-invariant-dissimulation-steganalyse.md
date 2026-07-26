@@ -6,7 +6,13 @@ category: informatique-ia
 tags: [stéganographie, stéganalyse, machine learning, TIPE, CNN]
 excerpt: "Un peu de TIPE, un peu de statistiques : peut-on détecter la présence d'un message caché dans une image JPG sans savoir quelle méthode a été utilisée pour le cacher ?"
 permalink: /fr/informatique-ia/invariant-dissimulation-steganalyse/
+cover: covers/invariant-dissimulation-steganalyse.svg
 ---
+
+<div class="doc-card">
+  <a href="{{ '/assets/pdf/notes/tipe-steganalyse/TIPE-2024-2025-presentation.pdf' | relative_url }}">📊 Support de présentation (PDF)</a>
+  <a href="{{ '/assets/pdf/notes/tipe-steganalyse/MCOT.pdf' | relative_url }}">📄 MCOT — motivation &amp; biblio (PDF)</a>
+</div>
 
 ## D'un bot un peu trop lent à une vraie question de recherche
 
@@ -119,13 +125,6 @@ Un invariant qui fonctionne bien sur un jeu de données propre n'est pas magique
 - **Méthodes avancées type HUGO**, conçues spécifiquement pour minimiser les traces statistiques détectables : l'écart sur nos caractéristiques devient quasi nul (< 0.01).
 
 Ce dernier point est le plus intéressant à mes yeux : plus une méthode de dissimulation est pensée pour être indétectable statistiquement, moins un invariant "simple" comme celui-ci suffit. C'est précisément ce qui m'a donné envie de continuer dans cette direction après le TIPE — je travaille aujourd'hui sur des méthodes à base de *transformers* pour essayer d'identifier des signatures de dissimulation plus fines que ce que des statistiques classiques peuvent capter. Ce sera probablement le sujet d'un prochain article.
-
-## Documents
-
-Pour qui veut aller plus loin que ce résumé, les deux documents originaux du TIPE sont téléchargeables :
-
-- 📊 [Support de présentation complet]({{ '/assets/pdf/notes/tipe-steganalyse/TIPE-2024-2025-presentation.pdf' | relative_url }}) (schémas, mesures détaillées, courbes d'entraînement du CNN)
-- 📄 [MCOT — motivation, positionnement thématique et bibliographie commentée]({{ '/assets/pdf/notes/tipe-steganalyse/MCOT.pdf' | relative_url }})
 
 ## Pour aller plus loin
 

@@ -195,9 +195,46 @@ a:hover { text-decoration: underline; }
   padding: 0.15rem 0.6rem;
 }
 
+.post-cover {
+  display: block;
+  width: 100%;
+  aspect-ratio: 12 / 5;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
 .post-header h1 {
   font-size: 1.85rem;
   margin-top: 0.5rem;
+}
+
+.doc-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0 0 2rem;
+  padding: 1rem 1.25rem;
+  background: var(--color-accent-soft);
+  border-radius: 10px;
+}
+
+.doc-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  font-size: 0.88rem;
+  color: var(--color-text);
+}
+
+.doc-card a:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  text-decoration: none;
 }
 
 .post-content {
