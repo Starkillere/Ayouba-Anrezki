@@ -1,101 +1,92 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact - Anrezki Ayouba</title>
-  <style>
-    body {
-      background: #f0f2f5;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      padding: 2rem 1rem;
-    }
-    .card {
-      background: #fff;
-      padding: 2rem 2.5rem;
-      border-radius: 12px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-      max-width: 420px;
-      width: 100%;
-    }
-    h1 {
-      margin-bottom: 0.2rem;
-      color: #004080;
-      text-align: center;
-    }
-    p.role {
-      color: #666;
-      font-style: italic;
-      margin-top: 0;
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-    .contact-info a {
-      display: block;
-      margin: 0.5rem 0;
-      color: #0077cc;
-      text-decoration: none;
-      font-weight: 600;
-      word-break: break-all;
-    }
-    .contact-info a:hover {
-      text-decoration: underline;
-    }
-    .label {
-      font-weight: bold;
-      color: #333;
-      margin-top: 1rem;
-      margin-bottom: 0.3rem;
-    }
-    form {
-      margin-top: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-    label {
-      font-size: 0.9rem;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      gap: 0.3rem;
-    }
-    input, textarea {
-      font: inherit;
-      padding: 0.5rem 0.6rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    textarea {
-      min-height: 100px;
-      resize: vertical;
-    }
-    button {
-      margin-top: 0.3rem;
-      padding: 0.6rem;
-      background: #004080;
-      color: #fff;
-      border: none;
-      border-radius: 6px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #002d5c;
-    }
-    .honeypot {
-      position: absolute;
-      left: -9999px;
-    }
-  </style>
-</head>
-<body>
+---
+layout: default
+title: Contact
+---
+<style>
+  .contact-page {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-page .card {
+    background: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    max-width: 420px;
+    width: 100%;
+  }
+  .contact-page h1 {
+    margin-bottom: 0.2rem;
+    color: #004080;
+    text-align: center;
+  }
+  .contact-page p.role {
+    color: #666;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .contact-page .contact-info a {
+    display: block;
+    margin: 0.5rem 0;
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: 600;
+    word-break: break-all;
+  }
+  .contact-page .contact-info a:hover {
+    text-decoration: underline;
+  }
+  .contact-page .label {
+    font-weight: bold;
+    color: #333;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  .contact-page form {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .contact-page label {
+    font-size: 0.9rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .contact-page input, .contact-page textarea {
+    font: inherit;
+    padding: 0.5rem 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  .contact-page textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  .contact-page button {
+    margin-top: 0.3rem;
+    padding: 0.6rem;
+    background: #004080;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .contact-page button:hover {
+    background: #002d5c;
+  }
+  .contact-page .honeypot {
+    position: absolute;
+    left: -9999px;
+  }
+</style>
 
+<div class="contact-page">
   <div class="card">
     <h1>Anrezki Ayouba</h1>
     <p class="role">Étudiant & freelancer</p>
@@ -126,6 +117,4 @@
       <button type="submit">Envoyer</button>
     </form>
   </div>
-
-</body>
-</html>
+</div>

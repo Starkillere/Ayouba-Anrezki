@@ -44,7 +44,8 @@ Décisions confirmées avec Ayouba, suite à `01-analyse-et-questions.md`. Ce fi
 
 ## CV et page Contact
 
-- **Restent séparés** du blog : design indépendant, pas intégrés aux layouts Jekyll du blog (pas de nav/header/footer partagés).
+- ~~Restent séparés du blog~~ **Revu le 26/07/2026** : ce sont des sections du site, pas des pages détachées. `cv.html` et `Contact.html` utilisent maintenant `layout: default` (nav/header/footer partagés), tout en gardant leur propre style scopé (`.cv-page`, `.contact-page`) pour ne pas hériter du style des articles de blog.
+- Le CV n'a plus de lien de téléchargement PDF (retiré à la demande d'Ayouba).
 
 ## Points encore ouverts avant de coder
 
