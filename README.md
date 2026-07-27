@@ -57,7 +57,11 @@ Pour **chaque article**, deux éléments sont désormais standards, pas optionne
 
 ## Projets GitHub sur la home page
 
-La home page (`_layouts/home.html`) affiche les 6 dépôts GitHub les plus étoilés d'Ayouba, via `assets/js/github-repos.js`. Ce script appelle l'API publique de GitHub (`api.github.com/users/Starkillere/repos`) **côté client**, au chargement de la page — aucun backend, aucune étape de build : la liste reflète directement l'état actuel de GitHub à chaque visite. Résultat mis en cache dans `localStorage` pendant 1h pour rester sous la limite de 60 requêtes/heure/IP de l'API non authentifiée. En cas d'échec (API indisponible, quota dépassé), un message de repli s'affiche avec un lien direct vers le profil GitHub.
+La home page (`_layouts/home.html`) affiche une sélection de dépôts GitHub d'Ayouba, via `assets/js/github-repos.js`. Ce script appelle l'API publique de GitHub (`api.github.com/users/Starkillere/repos`) **côté client**, au chargement de la page — aucun backend, aucune étape de build.
+
+Le **choix des dépôts affichés est manuel** (liste `CURATED_REPOS` en haut du script, dans l'ordre d'affichage voulu) — mais leur contenu (description, langage, nombre d'étoiles) est toujours récupéré en direct : modifier un dépôt sur GitHub met à jour sa carte ici automatiquement, sans toucher au code. Pour changer *quels* dépôts apparaissent, éditer `CURATED_REPOS` dans `assets/js/github-repos.js`.
+
+Résultat mis en cache dans `localStorage` pendant 1h pour rester sous la limite de 60 requêtes/heure/IP de l'API non authentifiée. En cas d'échec (API indisponible, quota dépassé), un message de repli s'affiche avec un lien direct vers le profil GitHub.
 
 ## Formulaire de contact
 

@@ -1,14 +1,24 @@
 // Fetches Ayouba's public repos client-side (no backend, no build step) and
-// renders the most-starred ones. Cached in localStorage for an hour to stay
-// well under GitHub's unauthenticated rate limit (60 req/h/IP).
+// renders a hand-picked selection, in this order. Descriptions/stars/language
+// still come live from the API, so editing a repo on GitHub updates the card
+// here automatically — only the *set* of repos shown is curated.
+// Cached in localStorage for an hour to stay well under GitHub's
+// unauthenticated rate limit (60 req/h/IP).
 (function () {
   var container = document.getElementById("github-repos");
   if (!container) return;
 
   var USERNAME = "Starkillere";
-  var CACHE_KEY = "gh-repos-cache-v1";
+  var CURATED_REPOS = [
+    "TIPE-detection-informations-cachees",
+    "osint-reportgen",
+    "TCT-tisseo-nfc-security-audit",
+    "StegCrypt",
+    "IGLY",
+    "Premier",
+  ];
+  var CACHE_KEY = "gh-repos-cache-v2";
   var CACHE_TTL = 60 * 60 * 1000;
-  var MAX_REPOS = 6;
 
   var errorText = container.dataset.errorText;
   var emptyText = container.dataset.emptyText;
@@ -77,12 +87,11 @@
       return res.json();
     })
     .then(function (repos) {
-      var top = repos
-        .filter(function (r) { return !r.fork && !r.archived; })
-        .sort(function (a, b) { return b.stargazers_count - a.stargazers_count; })
-        .slice(0, MAX_REPOS);
-      writeCache(top);
-      renderRepos(top);
+      var byName = {};
+      repos.forEach(function (r) { byName[r.name] = r; });
+      var curated = CURATED_REPOS.map(function (name) { return byName[name]; }).filter(Boolean);
+      writeCache(curated);
+      renderRepos(curated);
     })
     .catch(showError);
 })();
