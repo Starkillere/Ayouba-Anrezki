@@ -6,6 +6,13 @@ layout: default
   {{ content }}
 </section>
 
+<section class="projects-section">
+  <h2>{% if lang == "fr" %}Mes projets sur GitHub{% else %}My GitHub projects{% endif %}</h2>
+  <div id="github-repos" class="repo-grid" data-error-text="{% if lang == 'fr' %}Impossible de charger les dépôts pour l'instant.{% else %}Couldn't load repositories right now.{% endif %}" data-empty-text="{% if lang == 'fr' %}Aucun dépôt public trouvé.{% else %}No public repositories found.{% endif %}">
+    <p class="empty-state">{% if lang == "fr" %}Chargement des dépôts…{% else %}Loading repositories…{% endif %}</p>
+  </div>
+</section>
+
 <section class="post-list">
   {% assign lang_posts = site.posts | where: "lang", lang %}
   {% assign non_cours = lang_posts | where_exp: "p", "p.category != 'cours'" %}
@@ -25,3 +32,5 @@ layout: default
     {% endfor %}
   {% endif %}
 </section>
+
+<script defer src="{{ '/assets/js/github-repos.js' | relative_url }}"></script>

@@ -55,6 +55,10 @@ Pour **chaque article**, deux éléments sont désormais standards, pas optionne
 1. **Une image de couverture** (`cover:` en front-matter, fichier SVG dans `assets/img/covers/<slug>.svg`) — une illustration originale sur le thème de l'article (dégradés, effet glow, motifs en ligne fine liés au sujet), dans le même esprit visuel que le site d'inspiration (jingmatrix.github.io), mais produite en SVG pur (pas de génération d'image IA disponible dans cet environnement). Elle est affichée automatiquement en haut de l'article par `_layouts/post.html`, **et** en vignette dans les listes d'articles (accueil, page catégorie) par `_includes/post-card.html`, si le champ `cover` est renseigné.
 2. **Si l'article référence des documents téléchargeables** (PDF, notes, etc.), les lier via un bloc `<div class="doc-card">...</div>` placé **juste après le front-matter, avant le premier paragraphe** — pas en bas de page.
 
+## Projets GitHub sur la home page
+
+La home page (`_layouts/home.html`) affiche les 6 dépôts GitHub les plus étoilés d'Ayouba, via `assets/js/github-repos.js`. Ce script appelle l'API publique de GitHub (`api.github.com/users/Starkillere/repos`) **côté client**, au chargement de la page — aucun backend, aucune étape de build : la liste reflète directement l'état actuel de GitHub à chaque visite. Résultat mis en cache dans `localStorage` pendant 1h pour rester sous la limite de 60 requêtes/heure/IP de l'API non authentifiée. En cas d'échec (API indisponible, quota dépassé), un message de repli s'affiche avec un lien direct vers le profil GitHub.
+
 ## Formulaire de contact
 
 `Contact.html` pointe vers Formspree. Il faut créer un formulaire sur [formspree.io](https://formspree.io) et remplacer l'`id` dans l'attribut `action` du `<form>` (actuellement un placeholder `xxxxxxxx`).
