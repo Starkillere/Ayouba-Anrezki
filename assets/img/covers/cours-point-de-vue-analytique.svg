@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-label="Illustration : bande critique verticale traversée par une onde continue, avec des points lumineux dessus, évoquant les zéros de la fonction zêta.">
+
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#150c28"/>
+      <stop offset="50%" stop-color="#2a1650"/>
+      <stop offset="100%" stop-color="#160b2c"/>
+    </linearGradient>
+    <radialGradient id="glowbg" cx="24%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#b39dff" stop-opacity="0.30"/>
+      <stop offset="60%" stop-color="#b39dff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#b39dff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="matrix"
+        values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <rect width="1200" height="500" fill="url(#glowbg)"/>
+
+  <g>
+  <rect x="500" y="40" width="200" height="420" fill="#c9b8ff" opacity="0.08"/>
+  <line x1="500" y1="40" x2="500" y2="460" stroke="#c9b8ff" stroke-opacity="0.3" stroke-width="1.5"/>
+  <line x1="700" y1="40" x2="700" y2="460" stroke="#c9b8ff" stroke-opacity="0.3" stroke-width="1.5"/>
+  <path d="M 0,210.0 L 12,214.5 L 24,219.2 L 36,224.0 L 48,228.7 L 60,233.2 L 72,237.2 L 84,240.7 L 96,243.4 L 108,245.2 L 120,246.1 L 132,245.8 L 144,244.3 L 156,241.7 L 168,237.9 L 180,232.9 L 192,227.0 L 204,220.1 L 216,212.6 L 228,204.5 L 240,196.3 L 252,188.0 L 264,180.1 L 276,172.7 L 288,166.1 L 300,160.6 L 312,156.5 L 324,153.8 L 336,152.8 L 348,153.5 L 360,156.0 L 372,160.2 L 384,166.1 L 396,173.5 L 408,182.3 L 420,192.2 L 432,202.8 L 444,213.9 L 456,225.1 L 468,236.1 L 480,246.5 L 492,255.9 L 504,264.1 L 516,270.8 L 528,275.7 L 540,278.6 L 552,279.5 L 564,278.3 L 576,275.0 L 588,269.8 L 600,262.7 L 612,254.1 L 624,244.1 L 636,233.2 L 648,221.6 L 660,209.7 L 672,198.0 L 684,186.7 L 696,176.2 L 708,166.9 L 720,159.0 L 732,152.8 L 744,148.4 L 756,145.9 L 768,145.4 L 780,146.8 L 792,150.1 L 804,155.1 L 816,161.6 L 828,169.4 L 840,178.1 L 852,187.5 L 864,197.3 L 876,207.1 L 888,216.6 L 900,225.5 L 912,233.7 L 924,240.8 L 936,246.6 L 948,251.1 L 960,254.2 L 972,255.8 L 984,255.9 L 996,254.7 L 1008,252.2 L 1020,248.5 L 1032,243.9 L 1044,238.5 L 1056,232.6 L 1068,226.4 L 1080,220.0 L 1092,213.8 L 1104,207.8 L 1116,202.3 L 1128,197.4 L 1140,193.3 L 1152,189.9 L 1164,187.4 L 1176,185.7 L 1188,185.0 L 1200,185.0 L 1212,185.8" fill="none" stroke="#e7defc" stroke-opacity="0.55" stroke-width="2.5"/>
+  <circle cx="517.9" cy="178.6" r="5" fill="#ffd27f" opacity="0.9" filter="url(#glow)"/><circle cx="537.2" cy="187.9" r="5" fill="#ffd27f" opacity="0.9" filter="url(#glow)"/><circle cx="552.5" cy="232.3" r="5" fill="#ffd27f" opacity="0.9" filter="url(#glow)"/><circle cx="577.3" cy="304.1" r="5" fill="#ffd27f" opacity="0.9" filter="url(#glow)"/><circle cx="594.1" cy="199.9" r="5" fill="#ffd27f" opacity="0.9" filter="url(#glow)"/><circle cx="610.3" cy="209.8" r="5" fill="#ffd27f" opacity="0.9" filter="url(#glow)"/><circle cx="625.4" cy="179.1" r="5" fill="#ffd27f" opacity="0.9" filter="url(#glow)"/><circle cx="643.7" cy="326.9" r="5" fill="#ffd27f" opacity="0.9" filter="url(#glow)"/><circle cx="666.6" cy="305.2" r="5" fill="#ffd27f" opacity="0.9" filter="url(#glow)"/><circle cx="684.4" cy="194.8" r="5" fill="#ffd27f" opacity="0.9" filter="url(#glow)"/>
+</g>
+<rect width="1200" height="500" filter="url(#grain)" opacity="0.5"/>
+</svg>

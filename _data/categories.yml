@@ -29,3 +29,8 @@ creations:
   order: 6
   fr: { label: "Créations", slug: "creations" }
   en: { label: "Creations", slug: "creations" }
+
+cours:
+  order: 7
+  fr: { label: "Cours", slug: "cours" }
+  en: { label: "Course Notes", slug: "course-notes" }

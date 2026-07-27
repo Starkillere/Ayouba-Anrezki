@@ -7,7 +7,8 @@ layout: default
 </section>
 
 <section class="post-list">
-  {% assign posts = site.posts | where: "lang", lang | sort: "date" | reverse %}
+  {% assign lang_posts = site.posts | where: "lang", lang %}
+  {% assign posts = lang_posts | where_exp: "p", "p.category != 'cours' or p.featured" | sort: "date" | reverse %}
   {% if posts.size == 0 %}
     <p class="empty-state">
       {% if lang == "fr" %}

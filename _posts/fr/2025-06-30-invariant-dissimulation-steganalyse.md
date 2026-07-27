@@ -1,6 +1,6 @@
 ---
 title: "À la recherche d'un invariant de dissimulation dans les images JPG"
-date: 2026-07-26
+date: 2025-06-30
 ref: tipe-steganalyse-invariant-dissimulation
 category: informatique-ia
 tags: [stéganographie, stéganalyse, machine learning, TIPE, CNN]
