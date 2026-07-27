@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-label="Illustration : diagramme de confluence (diamant) d'un système de réécriture de termes, avec une suite décroissante évoquant un ordre bien fondé.">
+
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081b23"/>
+      <stop offset="50%" stop-color="#123845"/>
+      <stop offset="100%" stop-color="#0a2229"/>
+    </linearGradient>
+    <radialGradient id="glowbg" cx="24%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#7fd1c9" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#7fd1c9" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#7fd1c9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="matrix"
+        values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <rect width="1200" height="500" fill="url(#glowbg)"/>
+
+  <g>
+  <circle cx="220" cy="130" r="10.0" fill="#bfe9e3" opacity="0.75"/><circle cx="244" cy="172" r="8.9" fill="#bfe9e3" opacity="0.67"/><line x1="220" y1="130" x2="244" y2="172" stroke="#bfe9e3" stroke-opacity="0.25" stroke-width="1.5"/><circle cx="268" cy="214" r="7.8" fill="#bfe9e3" opacity="0.59"/><line x1="244" y1="172" x2="268" y2="214" stroke="#bfe9e3" stroke-opacity="0.25" stroke-width="1.5"/><circle cx="292" cy="256" r="6.7" fill="#bfe9e3" opacity="0.51"/><line x1="268" y1="214" x2="292" y2="256" stroke="#bfe9e3" stroke-opacity="0.25" stroke-width="1.5"/><circle cx="316" cy="298" r="5.6" fill="#bfe9e3" opacity="0.43"/><line x1="292" y1="256" x2="316" y2="298" stroke="#bfe9e3" stroke-opacity="0.25" stroke-width="1.5"/><circle cx="340" cy="340" r="4.5" fill="#bfe9e3" opacity="0.35"/><line x1="316" y1="298" x2="340" y2="340" stroke="#bfe9e3" stroke-opacity="0.25" stroke-width="1.5"/>
+  <line x1="760" y1="120" x2="620" y2="260" stroke="#bfe9e3" stroke-opacity="0.45" stroke-width="2.2"/>
+  <line x1="760" y1="120" x2="900" y2="260" stroke="#bfe9e3" stroke-opacity="0.45" stroke-width="2.2"/>
+  <line x1="620" y1="260" x2="760" y2="400" stroke="#bfe9e3" stroke-opacity="0.45" stroke-width="2.2" stroke-dasharray="7 7"/>
+  <line x1="900" y1="260" x2="760" y2="400" stroke="#bfe9e3" stroke-opacity="0.45" stroke-width="2.2" stroke-dasharray="7 7"/>
+  <circle cx="760" cy="120" r="9" fill="#bfe9e3" opacity="0.85"/>
+  <circle cx="620" cy="260" r="9" fill="#bfe9e3" opacity="0.85"/>
+  <circle cx="900" cy="260" r="9" fill="#bfe9e3" opacity="0.85"/>
+  <circle cx="760" cy="400" r="11" fill="#ffd27f" opacity="0.95" filter="url(#glow)"/>
+</g>
+<rect width="1200" height="500" filter="url(#grain)" opacity="0.5"/>
+</svg>
