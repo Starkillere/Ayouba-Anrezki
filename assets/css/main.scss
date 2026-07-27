@@ -138,9 +138,14 @@ a:hover { text-decoration: underline; }
   margin-bottom: 2.5rem;
 }
 
-.projects-section h2 {
+.projects-section h2,
+.publications-section h2 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
+}
+
+.publications-section {
+  margin-bottom: 2.5rem;
 }
 
 .repo-grid {

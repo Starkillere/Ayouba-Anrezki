@@ -13,24 +13,27 @@ layout: default
   </div>
 </section>
 
-<section class="post-list">
-  {% assign lang_posts = site.posts | where: "lang", lang %}
-  {% assign non_cours = lang_posts | where_exp: "p", "p.category != 'cours'" %}
-  {% assign featured_cours = lang_posts | where: "category", "cours" | where: "featured", true %}
-  {% assign posts = non_cours | concat: featured_cours | sort: "date" | reverse %}
-  {% if posts.size == 0 %}
-    <p class="empty-state">
-      {% if lang == "fr" %}
-        Aucun article publié pour l'instant — la structure du site est prête, le contenu arrive bientôt.
-      {% else %}
-        No posts yet — the site structure is ready, content is coming soon.
-      {% endif %}
-    </p>
-  {% else %}
-    {% for post in posts %}
-      {% include post-card.html post=post %}
-    {% endfor %}
-  {% endif %}
+<section class="publications-section">
+  <h2>{% if lang == "fr" %}Publications{% else %}Publications{% endif %}</h2>
+  <div class="post-list">
+    {% assign lang_posts = site.posts | where: "lang", lang %}
+    {% assign non_cours = lang_posts | where_exp: "p", "p.category != 'cours'" %}
+    {% assign featured_cours = lang_posts | where: "category", "cours" | where: "featured", true %}
+    {% assign posts = non_cours | concat: featured_cours | sort: "date" | reverse %}
+    {% if posts.size == 0 %}
+      <p class="empty-state">
+        {% if lang == "fr" %}
+          Aucun article publié pour l'instant — la structure du site est prête, le contenu arrive bientôt.
+        {% else %}
+          No posts yet — the site structure is ready, content is coming soon.
+        {% endif %}
+      </p>
+    {% else %}
+      {% for post in posts %}
+        {% include post-card.html post=post %}
+      {% endfor %}
+    {% endif %}
+  </div>
 </section>
 
 <script defer src="{{ '/assets/js/github-repos.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
