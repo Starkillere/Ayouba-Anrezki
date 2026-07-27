@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-label="Illustration : une courbe lisse et sa droite tangente en un point lumineux, évoquant la différentiabilité.">
+
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#150c28"/>
+      <stop offset="50%" stop-color="#2a1650"/>
+      <stop offset="100%" stop-color="#160b2c"/>
+    </linearGradient>
+    <radialGradient id="glowbg" cx="24%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#b39dff" stop-opacity="0.30"/>
+      <stop offset="60%" stop-color="#b39dff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#b39dff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="matrix"
+        values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <rect width="1200" height="500" fill="url(#glowbg)"/>
+
+  <g>
+  <path d="M 0,341.9 L 8,341.3 L 16,340.6 L 24,339.8 L 32,339.0 L 40,338.2 L 48,337.3 L 56,336.4 L 64,335.4 L 72,334.3 L 80,333.3 L 88,332.1 L 96,331.0 L 104,329.8 L 112,328.6 L 120,327.4 L 128,326.1 L 136,324.8 L 144,323.5 L 152,322.2 L 160,320.8 L 168,319.5 L 176,318.1 L 184,316.7 L 192,315.4 L 200,314.0 L 208,312.6 L 216,311.3 L 224,309.9 L 232,308.5 L 240,307.2 L 248,305.9 L 256,304.5 L 264,303.3 L 272,302.0 L 280,300.7 L 288,299.5 L 296,298.3 L 304,297.1 L 312,296.0 L 320,294.9 L 328,293.8 L 336,292.8 L 344,291.8 L 352,290.9 L 360,290.0 L 368,289.1 L 376,288.3 L 384,287.5 L 392,286.8 L 400,286.2 L 408,285.6 L 416,285.1 L 424,284.6 L 432,284.1 L 440,283.8 L 448,283.5 L 456,283.2 L 464,283.1 L 472,282.9 L 480,282.9 L 488,282.9 L 496,283.0 L 504,283.1 L 512,283.4 L 520,283.7 L 528,284.0 L 536,284.4 L 544,284.9 L 552,285.5 L 560,286.1 L 568,286.8 L 576,287.6 L 584,288.5 L 592,289.4 L 600,290.3 L 608,291.4 L 616,292.5 L 624,293.7 L 632,295.0 L 640,296.3 L 648,297.7 L 656,299.1 L 664,300.6 L 672,302.2 L 680,303.9 L 688,305.6 L 696,307.3 L 704,309.1 L 712,311.0 L 720,312.9 L 728,314.9 L 736,317.0 L 744,319.1 L 752,321.2 L 760,323.4 L 768,325.6 L 776,327.9 L 784,330.2 L 792,332.5 L 800,334.9 L 808,337.4 L 816,339.8 L 824,342.3 L 832,344.8 L 840,347.4 L 848,350.0 L 856,352.6 L 864,355.2 L 872,357.8 L 880,360.5 L 888,363.1 L 896,365.8 L 904,368.5 L 912,371.1 L 920,373.8 L 928,376.5 L 936,379.2 L 944,381.9 L 952,384.6 L 960,387.2 L 968,389.9 L 976,392.5 L 984,395.1 L 992,397.7 L 1000,400.3 L 1008,402.8 L 1016,405.3 L 1024,407.8 L 1032,410.2 L 1040,412.6 L 1048,415.0 L 1056,417.3 L 1064,419.6 L 1072,421.9 L 1080,424.1 L 1088,426.2 L 1096,428.3 L 1104,430.3 L 1112,432.3 L 1120,434.2 L 1128,436.1 L 1136,437.8 L 1144,439.6 L 1152,441.2 L 1160,442.8 L 1168,444.3 L 1176,445.7 L 1184,447.1 L 1192,448.3 L 1200,449.5 L 1208,450.6 L 1216,451.7" fill="none" stroke="#e7defc" stroke-opacity="0.55" stroke-width="3"/>
+  <line x1="420.0" y1="259.0" x2="860.0" y2="333.5" stroke="#c9b8ff" stroke-opacity="0.4" stroke-width="2"/>
+  <circle cx="640" cy="296.3" r="7" fill="#ffd27f" opacity="0.95" filter="url(#glow)"/>
+</g>
+<rect width="1200" height="500" filter="url(#grain)" opacity="0.5"/>
+</svg>
