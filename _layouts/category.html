@@ -9,7 +9,7 @@ layout: default
 </section>
 
 <section class="post-list">
-  {% assign posts = site.posts | where: "lang", lang | where: "category", page.category | sort: "date" | reverse %}
+  {% assign posts = site.posts | where: "category", page.category | sort: "date" | reverse %}
   {% if posts.size == 0 %}
     <p class="empty-state">
       {% if lang == "fr" %}
@@ -20,7 +20,7 @@ layout: default
     </p>
   {% else %}
     {% for post in posts %}
-      {% include post-card.html post=post %}
+      {% include post-card.html post=post lang=lang %}
     {% endfor %}
   {% endif %}
 </section>
