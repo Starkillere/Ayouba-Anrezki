@@ -5,4 +5,4 @@ category: creations
 title: Créations
 ---
 
-Poèmes, textes et musique — l'autre versant de ce que j'aime faire.
+Poèmes, textes et musique : l'autre versant de ce que j'aime faire.

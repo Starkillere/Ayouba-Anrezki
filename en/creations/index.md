@@ -5,4 +5,4 @@ category: creations
 title: Creations
 ---
 
-Poems, texts and music — the other side of what I love doing.
+Poems, texts and music: the other side of what I love doing.
