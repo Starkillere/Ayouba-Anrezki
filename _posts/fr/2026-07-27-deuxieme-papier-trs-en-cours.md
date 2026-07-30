@@ -1,10 +1,10 @@
 ---
 title: "Un deuxième papier sur les systèmes de réécriture, encore en chantier"
-date: 2026-07-28
+date: 2026-07-30
 ref: journal-trs-completeness-draft
 category: journal
 tags: [réécriture de termes, IRIT, journal, work in progress]
-excerpt: "Mise à jour d'un papier plus poussé que le précédent sur les TRS : unification, paires critiques, complétion de Knuth-Bendix, modularité de la confluence (preuve complète), contre-exemple de Toyama, et indécidabilité de la terminaison. Presque abouti — il reste un point volontairement admis."
+excerpt: "Mise à jour d'un papier plus poussé que le précédent sur les TRS : unification, paires critiques, complétion de Knuth-Bendix, modularité de la confluence, contre-exemple de Toyama, et indécidabilité de la terminaison — avec une rigueur renforcée sur les fondations (choix dépendant, bonne définition des règles). Presque abouti — plusieurs points restent volontairement admis."
 permalink: /fr/journal/deuxieme-papier-trs-en-cours/
 cover: covers/journal-trs-en-cours.svg
 ---
@@ -16,6 +16,8 @@ cover: covers/journal-trs-en-cours.svg
 **Ce texte n'est pas encore tout à fait terminé.** Après mon étude guidée de l'article de Dershowitz, j'ai commencé un second papier sur les systèmes de réécriture de termes, plus poussé et plus formel — je le partage tel quel, comme un journal de recherche plutôt qu'un résultat définitivement clos.
 
 **Mise à jour du 28 juillet 2026 :** le papier a beaucoup avancé depuis le premier jet publié ici hier — l'unification, le théorème des paires critiques et la complétion de Knuth-Bendix sont maintenant rédigés en entier, et la preuve de modularité de la confluence est complète.
+
+**Mise à jour du 30 juillet 2026 :** cette nouvelle passe consolide surtout les fondations plutôt que d'ajouter du contenu nouveau. J'ai précisé qu'une règle de réécriture doit vérifier $\mathrm{Var}(r) \subseteq \mathrm{Var}(l)$ pour qu'une étape de réécriture soit bien définie (sinon le résultat dépendrait arbitrairement des variables du membre droit absentes du membre gauche), j'ai explicité où le raisonnement s'appuie sur l'axiome du choix dépendant (DC) pour passer d'un ordre "sans suite infinie décroissante" à un ordre "avec élément minimal", et j'ai repris de zéro la preuve de terminaison de l'algorithme d'unification avec une mesure lexicographique à trois composantes, plus robuste que la précédente. J'ai aussi ajouté un théorème de Dershowitz (l'absence de chevauchement entre règles suffit à la confluence locale, sans aucune hypothèse de terminaison), et une notion de *run équitable* pour la complétion de Knuth-Bendix, avec un contre-exemple explicite montrant qu'une complétion qui réussit sans jamais traiter toutes les paires critiques peut produire un système non confluent.
 
 ## Où j'en suis
 
@@ -40,4 +42,4 @@ Je termine par une section indépendante du reste : l'encodage d'une machine de 
 
 ## Ce qu'il reste à faire
 
-Le papier est maintenant presque complet, mais il reste un point que j'admets volontairement sans le démontrer : dans le contre-exemple de Toyama ci-dessus, je prouve que $\mathcal{R}_2$ termine, mais j'admets la terminaison de $\mathcal{R}_1$ sans le détail complet de l'argument (Toyama 1987 ; Drosten 1989), et je m'appuie de la même façon sur le résultat de Toyama-Klop-Barendregt pour la terminaison de l'union de deux TRS convergents et linéaires à gauche — j'ai préféré l'honnêteté plutôt que l'apparence d'exhaustivité, plutôt que de comprimer une preuve technique de plusieurs pages. Je republierai une version à jour ici si je finis par combler ce point.
+Le papier est maintenant presque complet, mais plusieurs points restent admis volontairement plutôt que démontrés en entier : dans le contre-exemple de Toyama, je prouve que $\mathcal{R}_2$ termine, mais j'admets la terminaison de $\mathcal{R}_1$ sans le détail complet de l'argument (Toyama 1987), et je m'appuie de la même façon sur le résultat de Toyama-Klop-Barendregt pour la terminaison de l'union de deux TRS convergents et linéaires à gauche. En creusant la section sur les systèmes orthogonaux et la section sur l'indécidabilité, j'ai aussi identifié deux autres points techniques que je cite plutôt que je ne redémontre : la généralisation du lemme du "strip" à des chaînes de réductions arbitraires dans le théorème de Rosen, et surtout un raffinement de Huet et Lankford (1978) nécessaire pour que la réduction machine de Turing → TRS porte bien sur "est-ce que $M$ s'arrête sur $\langle M \rangle$" et non sur la question plus large et non pertinente de la terminaison depuis *toute* configuration. J'ai préféré l'honnêteté plutôt que l'apparence d'exhaustivité, plutôt que de comprimer des preuves techniques de plusieurs pages. Je republierai une version à jour ici si je finis par combler ces points.
