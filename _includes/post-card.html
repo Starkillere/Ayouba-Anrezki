@@ -7,6 +7,9 @@
   <div class="post-card-body">
     <p class="post-card-meta">
       <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: "%d %B %Y" }}</time>
+      {% if include.lang and include.post.lang != include.lang %}
+      <span class="badge">{{ include.post.lang | upcase }}</span>
+      {% endif %}
     </p>
     <h3 class="post-card-title"><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h3>
     {% if include.post.excerpt %}<p class="post-card-excerpt">{{ include.post.excerpt }}</p>{% endif %}

@@ -16,10 +16,9 @@ layout: default
 <section class="publications-section">
   <h2>{% if lang == "fr" %}Publications{% else %}Publications{% endif %}</h2>
   <div class="post-list">
-    {% assign lang_posts = site.posts | where: "lang", lang %}
-    {% assign non_cours = lang_posts | where_exp: "p", "p.category != 'cours'" %}
-    {% assign featured_cours = lang_posts | where: "category", "cours" | where: "featured", true %}
-    {% assign posts = non_cours | concat: featured_cours | sort: "date" | reverse %}
+    {% assign all_posts = site.posts | where_exp: "p", "p.category != 'cours'" %}
+    {% assign featured_cours = site.posts | where: "category", "cours" | where: "featured", true %}
+    {% assign posts = all_posts | concat: featured_cours | sort: "date" | reverse %}
     {% if posts.size == 0 %}
       <p class="empty-state">
         {% if lang == "fr" %}
@@ -30,7 +29,7 @@ layout: default
       </p>
     {% else %}
       {% for post in posts %}
-        {% include post-card.html post=post %}
+        {% include post-card.html post=post lang=lang %}
       {% endfor %}
     {% endif %}
   </div>
