@@ -2,11 +2,11 @@
 title: "« Cheminement »"
 date: 2026-08-10
 ref: creation-cheminement
-category: creations
+category: ecriture
 tags: [écriture, poésie]
 excerpt: "Neuf poèmes qui retracent une histoire d'amour depuis ses nuits les plus douces jusqu'à ses ombres les plus profondes : un recueil qui est une traversée, celle d'un cœur qui cherche, malgré tout, la lumière."
-permalink: /fr/creations/cheminement/
-cover: covers/creations-cheminement.png
+permalink: /fr/ecriture/cheminement/
+cover: covers/ecriture-cheminement.png
 ---
 
 <div class="doc-card">

@@ -1,8 +1,8 @@
 ---
 layout: category
-ref: cat-creations
-category: creations
-title: Créations
+ref: cat-ecriture
+category: ecriture
+title: Écriture
 ---
 
 Poèmes, textes et musique : l'autre versant de ce que j'aime faire.

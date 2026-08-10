@@ -25,10 +25,10 @@ entrepreneuriat:
   fr: { label: "Entrepreneuriat", slug: "entrepreneuriat" }
   en: { label: "Entrepreneurship", slug: "entrepreneurship" }
 
-creations:
+ecriture:
   order: 6
-  fr: { label: "Créations", slug: "creations" }
-  en: { label: "Creations", slug: "creations" }
+  fr: { label: "Écriture", slug: "ecriture" }
+  en: { label: "Writing", slug: "writing" }
 
 cours:
   order: 7

@@ -1,8 +1,8 @@
 ---
 layout: category
-ref: cat-creations
-category: creations
-title: Creations
+ref: cat-ecriture
+category: ecriture
+title: Writing
 ---
 
 Poems, texts and music: the other side of what I love doing.

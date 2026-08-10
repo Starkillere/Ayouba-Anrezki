@@ -2,11 +2,11 @@
 title: "« Bénie Mon Cœur », chapitre 1"
 date: 2026-08-10
 ref: creation-benie-mon-coeur
-category: creations
+category: ecriture
 tags: [écriture, récit, poésie]
 excerpt: "« Bénie Mon Cœur » s'ouvre sur une lettre déchirante adressée à Bless, celle qui devait être sa femme : quatre mois vécus intensément, jusqu'à ce que l'amour ne suffise plus."
-permalink: /fr/creations/benie-mon-coeur/
-cover: covers/creations-benie-mon-coeur.png
+permalink: /fr/ecriture/benie-mon-coeur/
+cover: covers/ecriture-benie-mon-coeur.png
 ---
 
 <div class="doc-card">
