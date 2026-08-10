@@ -14,23 +14,77 @@ layout: default
 </section>
 
 <section class="publications-section">
-  <h2>{% if lang == "fr" %}Publications{% else %}Publications{% endif %}</h2>
-  <div class="post-list">
-    {% assign all_posts = site.posts | where_exp: "p", "p.category != 'cours'" %}
-    {% assign featured_cours = site.posts | where: "category", "cours" | where: "featured", true %}
-    {% assign posts = all_posts | concat: featured_cours | sort: "date" | reverse %}
-    {% if posts.size == 0 %}
-      <p class="empty-state">
-        {% if lang == "fr" %}
-          Aucun article publié pour l'instant, la structure du site est prête, le contenu arrive bientôt.
-        {% else %}
-          No posts yet, the site structure is ready, content is coming soon.
-        {% endif %}
-      </p>
-    {% else %}
-      {% for post in posts %}
+  <h2>{% if lang == "fr" %}À la une{% else %}Featured{% endif %}</h2>
+  {% assign all_posts = site.posts | where_exp: "p", "p.category != 'cours'" %}
+  {% assign featured_cours = site.posts | where: "category", "cours" | where: "featured", true %}
+  {% assign posts = all_posts | concat: featured_cours | sort: "date" | reverse %}
+  {% if posts.size == 0 %}
+    <p class="empty-state">
+      {% if lang == "fr" %}
+        Aucun article publié pour l'instant, la structure du site est prête, le contenu arrive bientôt.
+      {% else %}
+        No posts yet, the site structure is ready, content is coming soon.
+      {% endif %}
+    </p>
+  {% else %}
+    <div class="featured-grid">
+      {% assign featured_top = posts | slice: 0, 3 %}
+      {% for post in featured_top %}
         {% include post-card.html post=post lang=lang %}
       {% endfor %}
+    </div>
+  {% endif %}
+</section>
+
+<section class="home-blocks">
+  {% assign science1 = posts | where: "category", "recherche-maths" %}
+  {% assign science2 = posts | where: "category", "physique-astro" %}
+  {% assign science3 = posts | where: "category", "informatique-ia" %}
+  {% assign science_posts = science1 | concat: science2 | concat: science3 | sort: "date" | reverse | slice: 0, 4 %}
+
+  {% assign ecriture_all = posts | where: "category", "ecriture" %}
+  {% assign ecriture_posts = ecriture_all | slice: 0, 4 %}
+
+  {% assign autre1 = posts | where: "category", "journal" %}
+  {% assign autre2 = posts | where: "category", "entrepreneuriat" %}
+  {% assign autre_posts = autre1 | concat: autre2 | sort: "date" | reverse | slice: 0, 4 %}
+
+  <div class="home-block">
+    <h3>{% if lang == "fr" %}Science{% else %}Science{% endif %}</h3>
+    {% if science_posts.size == 0 %}
+      <p class="empty-state">{% if lang == "fr" %}Rien pour l'instant.{% else %}Nothing yet.{% endif %}</p>
+    {% else %}
+      <ul class="mini-card-list">
+        {% for post in science_posts %}
+          {% include mini-post-card.html post=post %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+
+  <div class="home-block">
+    <h3>{{ site.data.categories.ecriture[lang].label }}</h3>
+    {% if ecriture_posts.size == 0 %}
+      <p class="empty-state">{% if lang == "fr" %}Rien pour l'instant.{% else %}Nothing yet.{% endif %}</p>
+    {% else %}
+      <ul class="mini-card-list">
+        {% for post in ecriture_posts %}
+          {% include mini-post-card.html post=post %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+
+  <div class="home-block">
+    <h3>{% if lang == "fr" %}Autre{% else %}Other{% endif %}</h3>
+    {% if autre_posts.size == 0 %}
+      <p class="empty-state">{% if lang == "fr" %}Rien pour l'instant.{% else %}Nothing yet.{% endif %}</p>
+    {% else %}
+      <ul class="mini-card-list">
+        {% for post in autre_posts %}
+          {% include mini-post-card.html post=post %}
+        {% endfor %}
+      </ul>
     {% endif %}
   </div>
 </section>
