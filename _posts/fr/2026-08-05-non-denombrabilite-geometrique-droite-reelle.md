@@ -10,7 +10,7 @@ cover: covers/recherche-non-denombrabilite-geometrique.svg
 ---
 
 <div class="doc-card">
-  <a href="{{ '/assets/pdf/notes/non-denombrabilite-geometrique/non-denombrabilite-geometrique.pdf' | relative_url }}">📄 Une démonstration géométrique de la non-dénombrabilité de la droite réelle (PDF)</a>
+  <a href="{{ '/assets/pdf/notes/non-denombrabilite-geometrique/non-denombrabilite-geometrique.pdf' | relative_url }}" class="pdf-download">Télécharge le papier au format PDF</a>
 </div>
 
 L'argument diagonal de Cantor, la preuve classique que $\mathbb{R}$ n'est pas dénombrable, s'appuie sur l'écriture décimale des réels : on construit un réel qui échappe à toute énumération en modifiant, chiffre par chiffre, les termes d'une liste supposée exhaustive. C'est un argument d'une remarquable économie, mais il fait intervenir un objet essentiellement arithmétique, le développement décimal, qui n'appartient pas à proprement parler à la géométrie de la droite. Ce papier montre que le résultat s'obtient aussi par une voie entièrement géométrique, sans jamais quitter le registre des points, des segments et de leur inclusion.

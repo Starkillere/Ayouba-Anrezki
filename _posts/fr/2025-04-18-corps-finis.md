@@ -10,7 +10,7 @@ cover: covers/cours-corps-finis.svg
 ---
 
 <div class="doc-card">
-  <a href="{{ '/assets/pdf/notes/arithmetique/coprs_finit.pdf' | relative_url }}">📄 Corps finis (PDF)</a>
+  <a href="{{ '/assets/pdf/notes/arithmetique/coprs_finit.pdf' | relative_url }}" class="pdf-download">Télécharge le papier au format PDF</a>
 </div>
 
 Notes de cours sur les corps finis : la caractéristique d'un corps, la preuve que cette caractéristique, quand elle est non nulle, est nécessairement un nombre premier, et le théorème central : si $F$ est un corps fini, il existe $k$ tel que $|F| = \mathrm{car}(F)^k$. Autrement dit, le cardinal d'un corps fini est toujours une puissance d'un nombre premier.

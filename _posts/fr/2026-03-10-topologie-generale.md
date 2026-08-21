@@ -10,7 +10,7 @@ cover: covers/cours-topologie-generale.svg
 ---
 
 <div class="doc-card">
-  <a href="{{ '/assets/pdf/notes/espaces-vectoriels-normes/rappelTopologieGeneral.pdf' | relative_url }}">📄 Rappel sur la topologie générale (PDF)</a>
+  <a href="{{ '/assets/pdf/notes/espaces-vectoriels-normes/rappelTopologieGeneral.pdf' | relative_url }}" class="pdf-download">Télécharge le papier au format PDF</a>
 </div>
 
 Un rappel assez complet de topologie des espaces métriques : boules ouvertes/fermées, ouverts, fermés, intérieur, extérieur, frontière, adhérence, et les liens entre continuité et images réciproques d'ouverts/fermés.

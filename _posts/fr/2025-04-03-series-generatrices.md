@@ -10,7 +10,7 @@ cover: covers/cours-series-generatrices.svg
 ---
 
 <div class="doc-card">
-  <a href="{{ '/assets/pdf/notes/arithmetique/chapitre0serie_generatrice.pdf' | relative_url }}">📄 Séries génératrices (PDF)</a>
+  <a href="{{ '/assets/pdf/notes/arithmetique/chapitre0serie_generatrice.pdf' | relative_url }}" class="pdf-download">Télécharge le papier au format PDF</a>
 </div>
 
 Notes de cours sur les séries génératrices : associer à une suite $(a_n)_n$ la série entière $\sum a_n X^n$ pour en faire un objet qu'on manipule algébriquement plutôt que terme à terme.

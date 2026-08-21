@@ -10,7 +10,7 @@ cover: covers/cours-completude.svg
 ---
 
 <div class="doc-card">
-  <a href="{{ '/assets/pdf/notes/calcul-differentiel-avance/chap_2_completude.pdf' | relative_url }}">📄 Chapitre 2 : Complétude (PDF)</a>
+  <a href="{{ '/assets/pdf/notes/calcul-differentiel-avance/chap_2_completude.pdf' | relative_url }}" class="pdf-download">Télécharge le papier au format PDF</a>
 </div>
 
 Chapitre 2 de mon cours de calcul différentiel avancé : les suites de Cauchy et la complétude des espaces vectoriels normés (espaces de Banach). Toute suite convergente est de Cauchy, toute suite de Cauchy est bornée, et la complétude se transmet entre normes équivalentes.

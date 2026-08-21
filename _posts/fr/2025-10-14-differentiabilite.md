@@ -10,7 +10,7 @@ cover: covers/cours-differentiabilite.svg
 ---
 
 <div class="doc-card">
-  <a href="{{ '/assets/pdf/notes/calcul-differentiel-avance/chap_3_differentiabilite.pdf' | relative_url }}">📄 Chapitre 3 : Différentiabilité (PDF)</a>
+  <a href="{{ '/assets/pdf/notes/calcul-differentiel-avance/chap_3_differentiabilite.pdf' | relative_url }}" class="pdf-download">Télécharge le papier au format PDF</a>
 </div>
 
 Chapitre 3 du cours de calcul différentiel avancé : la définition de la différentiabilité en un point, comme approximation linéaire $g(x) = g(a) + L(x-a) + \|x-a\|\,\delta(x)$ avec $\delta(x) \to 0$. L'unicité de cette application linéaire $L$ (la différentielle $Dg(a)$), et le lien avec la dérivée classique en dimension 1.

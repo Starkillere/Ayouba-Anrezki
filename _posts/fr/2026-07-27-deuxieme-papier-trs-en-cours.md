@@ -10,7 +10,7 @@ cover: covers/journal-trs-en-cours.svg
 ---
 
 <div class="doc-card">
-  <a href="{{ '/assets/pdf/notes/rewrite-systems/trs-completeness-draft.pdf' | relative_url }}">📄 Terms Rewrite Systems Equational Reasoning, Complete Property : version mise à jour (PDF, en anglais)</a>
+  <a href="{{ '/assets/pdf/notes/rewrite-systems/trs-completeness-draft.pdf' | relative_url }}" class="pdf-download">Télécharge le papier au format PDF</a>
 </div>
 
 **Ce texte n'est pas encore tout à fait terminé.** Après mon étude guidée de l'article de Dershowitz, j'ai commencé un second papier sur les systèmes de réécriture de termes, plus poussé et plus formel. Je le partage tel quel, comme un journal de recherche plutôt qu'un résultat définitivement clos.

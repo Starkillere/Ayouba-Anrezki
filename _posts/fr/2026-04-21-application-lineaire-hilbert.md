@@ -10,7 +10,7 @@ cover: covers/cours-application-lineaire-hilbert.svg
 ---
 
 <div class="doc-card">
-  <a href="{{ '/assets/pdf/notes/espaces-vectoriels-normes/application-lineaire-hilbert.pdf' | relative_url }}">📄 Application linéaire sur un Hilbert (PDF)</a>
+  <a href="{{ '/assets/pdf/notes/espaces-vectoriels-normes/application-lineaire-hilbert.pdf' | relative_url }}" class="pdf-download">Télécharge le papier au format PDF</a>
 </div>
 
 Trois résultats sur les applications linéaires continues entre espaces de Hilbert. D'abord la **factorisation** : pour $T$ linéaire continue sur un Hilbert $H$, la restriction de $T$ à $(\ker T)^\perp$ est une bijection continue vers $\mathrm{Im}\,T$ : la décomposition $H = \ker T \oplus (\ker T)^\perp$ fait tout le travail.

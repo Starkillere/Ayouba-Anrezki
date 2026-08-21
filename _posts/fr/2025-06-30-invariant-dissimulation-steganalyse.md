@@ -11,7 +11,7 @@ cover: covers/invariant-dissimulation-steganalyse.svg
 
 <div class="doc-card">
   <a href="{{ '/assets/pdf/notes/tipe-steganalyse/TIPE-2024-2025-presentation.pdf' | relative_url }}">📊 Support de présentation (PDF)</a>
-  <a href="{{ '/assets/pdf/notes/tipe-steganalyse/MCOT.pdf' | relative_url }}">📄 MCOT : motivation &amp; biblio (PDF)</a>
+  <a href="{{ '/assets/pdf/notes/tipe-steganalyse/MCOT.pdf' | relative_url }}" class="pdf-download">Télécharge le papier au format PDF</a>
 </div>
 
 ## D'un bot un peu trop lent à une vraie question de recherche

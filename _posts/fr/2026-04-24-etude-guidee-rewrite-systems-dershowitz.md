@@ -10,7 +10,7 @@ cover: covers/recherche-trs-confluence.svg
 ---
 
 <div class="doc-card">
-  <a href="{{ '/assets/pdf/notes/rewrite-systems/dershowitz-guided-study.pdf' | relative_url }}">📄 A Guided Study of "A Taste of Rewrite Systems" (PDF, en anglais)</a>
+  <a href="{{ '/assets/pdf/notes/rewrite-systems/dershowitz-guided-study.pdf' | relative_url }}" class="pdf-download">Télécharge le papier au format PDF</a>
 </div>
 
 Pendant mon stage à l'IRIT (équipe ILIAC, encadré par Yannick Chevalier), j'ai passé du temps à lire et disséquer un article classique de Nachum Dershowitz sur les systèmes de réécriture de termes. Ce texte est le premier d'une série que je compte écrire sur le sujet : une manière de fixer par écrit ce que j'en ai retenu, augmenté de mes propres questions.

@@ -10,7 +10,7 @@ cover: covers/cours-banach-dualite.svg
 ---
 
 <div class="doc-card">
-  <a href="{{ '/assets/pdf/notes/espaces-vectoriels-normes/EspaceDeBanachDualite.pdf' | relative_url }}">📄 Espace de Banach : dualité (PDF)</a>
+  <a href="{{ '/assets/pdf/notes/espaces-vectoriels-normes/EspaceDeBanachDualite.pdf' | relative_url }}" class="pdf-download">Télécharge le papier au format PDF</a>
 </div>
 
 Notes de cours d'analyse fonctionnelle : un espace de Banach est un espace vectoriel normé complet. Un sous-espace fermé d'un Banach est encore un Banach ; $L^\infty(X, \mathbb{K})$ (les fonctions bornées) en est un exemple, tout comme $C(X)$ pour $X$ compact.

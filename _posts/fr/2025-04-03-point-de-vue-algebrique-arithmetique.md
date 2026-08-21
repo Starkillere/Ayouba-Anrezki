@@ -10,7 +10,7 @@ cover: covers/cours-point-de-vue-algebrique.svg
 ---
 
 <div class="doc-card">
-  <a href="{{ '/assets/pdf/notes/arithmetique/chapitre1arithmetique.pdf' | relative_url }}">📄 Point de vue algébrique de l'arithmétique (PDF)</a>
+  <a href="{{ '/assets/pdf/notes/arithmetique/chapitre1arithmetique.pdf' | relative_url }}" class="pdf-download">Télécharge le papier au format PDF</a>
 </div>
 
 Notes de cours sur les fonctions arithmétiques (des suites de $\mathbb{C}$ indexées par $\mathbb{N}^*$) munies du produit de convolution de Dirichlet $(f \star g)(N) = \sum_{d \mid N} f(d)\,g(N/d)$.

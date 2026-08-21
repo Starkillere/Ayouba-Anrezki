@@ -10,7 +10,7 @@ cover: covers/cours-bases-hilbertiennes-fourier.svg
 ---
 
 <div class="doc-card">
-  <a href="{{ '/assets/pdf/notes/espaces-vectoriels-normes/Bases-Hilbertiennes-series-de-Fourier.pdf' | relative_url }}">📄 Bases hilbertiennes : série de Fourier (PDF)</a>
+  <a href="{{ '/assets/pdf/notes/espaces-vectoriels-normes/Bases-Hilbertiennes-series-de-Fourier.pdf' | relative_url }}" class="pdf-download">Télécharge le papier au format PDF</a>
 </div>
 
 Une base hilbertienne $(e_n)$ d'un espace de Hilbert $H$ est une famille orthonormale totale (dont le sous-espace engendré est dense). Un Hilbert admet une base hilbertienne si et seulement si il est séparable : la preuve construit la base par un procédé à la Gram-Schmidt à partir d'une suite dense.

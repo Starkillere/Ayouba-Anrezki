@@ -10,7 +10,7 @@ cover: covers/journal-transformers-vision.svg
 ---
 
 <div class="doc-card">
-  <a href="{{ '/assets/pdf/notes/transformers-vision/transformers-analyse-image-draft.pdf' | relative_url }}">📄 Le modèle des Transformers pour l'analyse d'image, dernière version (PDF)</a>
+  <a href="{{ '/assets/pdf/notes/transformers-vision/transformers-analyse-image-draft.pdf' | relative_url }}" class="pdf-download">Télécharge le papier au format PDF</a>
 </div>
 
 **Ce texte n'est vraiment qu'à ses débuts.** Je me suis lancé dans un nouveau papier, sur les Transformers cette fois, avec le même objectif que pour mes textes sur les systèmes de réécriture : une présentation rigoureuse, où chaque objet mathématique est introduit par le besoin précis auquel il répond plutôt que posé sans justification.

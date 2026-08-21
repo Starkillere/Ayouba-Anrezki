@@ -393,6 +393,20 @@ a:hover { text-decoration: underline; }
   text-decoration: none;
 }
 
+.doc-card a.pdf-download {
+  background: #2f7d4f;
+  border-color: #2f7d4f;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.55rem 1.1rem;
+}
+
+.doc-card a.pdf-download:hover {
+  background: #24603c;
+  border-color: #24603c;
+  color: #ffffff;
+}
+
 .post-content {
   font-size: 1.02rem;
 }
