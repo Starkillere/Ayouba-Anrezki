@@ -2,11 +2,11 @@
 title: "Un deuxième papier sur les systèmes de réécriture, encore en chantier"
 date: 2026-07-30
 ref: journal-trs-completeness-draft
-category: journal
-tags: [réécriture de termes, IRIT, journal, work in progress]
+category: recherche-maths
+tags: [réécriture de termes, IRIT, confluence, work in progress]
 excerpt: "Mise à jour d'un papier plus poussé que le précédent sur les TRS : unification, paires critiques, complétion de Knuth-Bendix, modularité de la confluence, contre-exemple de Toyama, et indécidabilité de la terminaison, avec une rigueur renforcée sur les fondations (choix dépendant, bonne définition des règles). Presque abouti, plusieurs points restent volontairement admis."
-permalink: /fr/journal/deuxieme-papier-trs-en-cours/
-cover: covers/journal-trs-en-cours.svg
+permalink: /fr/recherche-maths/deuxieme-papier-trs-en-cours/
+cover: covers/recherche-trs-completeness.svg
 ---
 
 <div class="doc-card">
