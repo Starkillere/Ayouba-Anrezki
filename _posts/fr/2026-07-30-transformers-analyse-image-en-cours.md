@@ -6,7 +6,7 @@ category: informatique-ia
 tags: [transformers, deep learning, intelligence artificielle, journal, work in progress]
 excerpt: "Un papier sur les Transformers et l'analyse d'image, tout juste commencé."
 permalink: /fr/informatique-ia/transformers-analyse-image-en-cours/
-cover: covers/journal-transformers-vision.svg
+cover: covers/fig-transformers.png
 redirect_from: [/fr/journal/transformers-analyse-image-en-cours/]
 en_travaux: true
 ---

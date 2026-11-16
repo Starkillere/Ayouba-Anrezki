@@ -6,7 +6,7 @@ category: recherche-maths
 tags: [nombres premiers, théorie des nombres, arithmétique, journal, work in progress]
 excerpt: "Avec Saber Hamdaoui : le n-ième nombre premier a-t-il une forme explicite ?"
 permalink: /fr/recherche-maths/formes-explicites-nombre-premier-en-cours/
-cover: covers/journal-nombres-premiers-explicites.svg
+cover: covers/fig-nombre-premier.png
 redirect_from: [/fr/journal/formes-explicites-nombre-premier-en-cours/]
 en_travaux: true
 ---

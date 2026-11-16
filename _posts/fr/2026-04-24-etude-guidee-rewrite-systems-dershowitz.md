@@ -6,7 +6,7 @@ category: recherche-maths
 tags: [réécriture de termes, logique, IRIT, confluence]
 excerpt: "Ma lecture d'un article de Dershowitz sur les systèmes de réécriture, pendant mon stage à l'IRIT."
 permalink: /fr/recherche-maths/etude-guidee-rewrite-systems-dershowitz/
-cover: covers/recherche-trs-confluence.svg
+cover: covers/fig-dershowitz.png
 ---
 
 <div class="doc-card">

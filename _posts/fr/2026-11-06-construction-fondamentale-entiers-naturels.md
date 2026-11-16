@@ -6,7 +6,7 @@ category: recherche-maths
 tags: [entiers naturels, théorie des ensembles, Peano, ZF, folles théories des ensembles]
 excerpt: "C'est quoi un entier naturel ? D'abord une approche intuitive, par le fait de compter, une façon de faire qui tient plus de la folie que des mathématiques."
 permalink: /fr/recherche-maths/construction-fondamentale-entiers-naturels/
-cover: covers/recherche-construction-entiers-naturels.svg
+cover: covers/fig-entiers-naturels.png
 en_travaux: true
 ---
 

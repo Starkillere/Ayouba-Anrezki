@@ -6,7 +6,7 @@ category: informatique-ia
 tags: [stéganographie, stéganalyse, machine learning, TIPE, CNN]
 excerpt: "Mon TIPE : peut-on savoir qu'une image JPG cache un message, sans savoir comment on l'a caché ?"
 permalink: /fr/informatique-ia/invariant-dissimulation-steganalyse/
-cover: covers/invariant-dissimulation-steganalyse.svg
+cover: covers/fig-steganalyse.png
 ---
 
 <div class="doc-card">
