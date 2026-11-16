@@ -4,6 +4,9 @@
     <li><a href="{{ '/' | append: lang | append: '/' | relative_url }}">{% if lang == "fr" %}Accueil{% else %}Home{% endif %}</a></li>
     {% for entry in site.data.categories %}
       {% assign catdata = entry[1][lang] %}
+      {% comment %}Une catégorie sans article (dans cette langue) reste dans _data/categories.yml mais n'est pas affichée.{% endcomment %}
+      {% assign nb = site.posts | where: "category", entry[0] | where: "lang", lang | size %}
+      {% if nb == 0 %}{% continue %}{% endif %}
       <li><a href="{{ '/' | append: lang | append: '/' | append: catdata.slug | append: '/' | relative_url }}">{{ catdata.label }}</a></li>
     {% endfor %}
   </ul>
