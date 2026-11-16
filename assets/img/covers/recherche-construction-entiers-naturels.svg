@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-label="Illustration : des cercles emboîtés de plus en plus nombreux, reliés par des flèches, comme une suite qui se construit à partir de rien.">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1408"/><stop offset="50%" stop-color="#33240c"/><stop offset="100%" stop-color="#1c1408"/>
+    </linearGradient>
+    <radialGradient id="glowbg" cx="35%" cy="55%" r="60%">
+      <stop offset="0%" stop-color="#f0c674" stop-opacity="0.22"/><stop offset="100%" stop-color="#f0c674" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <rect width="1200" height="500" fill="url(#glowbg)"/>
+<g fill="none" stroke="#f0c674" stroke-opacity="0.85" stroke-width="2" filter="url(#glow)">
+  <circle cx="200" cy="250" r="18" stroke-opacity="0.90"/>
+  <path d="M290 250 C 320 200, 350 200, 325 245" stroke-dasharray="6 6"/>
+  <circle cx="420" cy="250" r="18" stroke-opacity="0.90"/>
+  <circle cx="420" cy="250" r="40" stroke-opacity="0.75"/>
+  <path d="M510 250 C 540 200, 570 200, 545 245" stroke-dasharray="6 6"/>
+  <circle cx="640" cy="250" r="18" stroke-opacity="0.90"/>
+  <circle cx="640" cy="250" r="40" stroke-opacity="0.75"/>
+  <circle cx="640" cy="250" r="62" stroke-opacity="0.60"/>
+  <path d="M730 250 C 760 200, 790 200, 765 245" stroke-dasharray="6 6"/>
+  <circle cx="860" cy="250" r="18" stroke-opacity="0.90"/>
+  <circle cx="860" cy="250" r="40" stroke-opacity="0.75"/>
+  <circle cx="860" cy="250" r="62" stroke-opacity="0.60"/>
+  <circle cx="860" cy="250" r="84" stroke-opacity="0.45"/>
+  <circle cx="1030" cy="250" r="4" fill="#f0c674"/><circle cx="1060" cy="250" r="4" fill="#f0c674"/><circle cx="1090" cy="250" r="4" fill="#f0c674"/>
+  </g>
+</svg>

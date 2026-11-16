@@ -456,3 +456,28 @@ a:hover { text-decoration: underline; }
   .site-header-inner { flex-direction: column; align-items: flex-start; }
   .header-actions { flex-wrap: wrap; }
 }
+
+/* Bandeau d'annonce temporaire (_data/annonce.yml) */
+.annonce {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.6rem 1rem;
+  background: var(--color-accent-soft);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+.annonce-texte { margin: 0 auto; max-width: 60rem; flex: 1; }
+.annonce a { color: var(--color-accent); }
+.annonce-fermer {
+  background: none;
+  border: 0;
+  color: var(--color-text-muted);
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 0.25rem;
+}
+.annonce-fermer:hover { color: var(--color-text); }

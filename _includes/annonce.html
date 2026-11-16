@@ -1,0 +1,23 @@
+{% assign a = site.data.annonce %}
+{% if a and a.actif %}
+{% assign lang = page.lang | default: site.default_lang %}
+<div class="annonce" id="annonce" data-id="{{ a.id }}" data-fin="{{ a.fin }}" role="status">
+  <p class="annonce-texte">{% if lang == "en" %}{{ a.en }}{% else %}{{ a.fr }}{% endif %}</p>
+  <button class="annonce-fermer" type="button" aria-label="{% if lang == 'en' %}Close{% else %}Fermer{% endif %}">×</button>
+</div>
+<script>
+(function () {
+  var el = document.getElementById('annonce');
+  if (!el) return;
+  var cle = 'annonce-fermee-' + el.dataset.id;
+  var fin = el.dataset.fin ? new Date(el.dataset.fin + 'T23:59:59') : null;
+  var fermee = false;
+  try { fermee = localStorage.getItem(cle) === '1'; } catch (e) {}
+  if (fermee || (fin && new Date() > fin)) { el.remove(); return; }
+  el.querySelector('.annonce-fermer').addEventListener('click', function () {
+    try { localStorage.setItem(cle, '1'); } catch (e) {}
+    el.remove();
+  });
+})();
+</script>
+{% endif %}
