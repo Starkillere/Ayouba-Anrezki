@@ -7,6 +7,7 @@ tags: [réécriture de termes, IRIT, confluence, work in progress]
 excerpt: "Un deuxième papier sur les systèmes de réécriture, plus poussé, pas encore fini."
 permalink: /fr/recherche-maths/deuxieme-papier-trs-en-cours/
 cover: covers/recherche-trs-completeness.svg
+en_travaux: true
 ---
 
 <div class="doc-card">

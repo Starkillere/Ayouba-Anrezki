@@ -10,6 +10,7 @@
       {% if include.lang and include.post.lang != include.lang %}
       <span class="badge">{{ include.post.lang | upcase }}</span>
       {% endif %}
+      {% if include.post.en_travaux %}<span class="badge badge-travaux">{% if include.lang == "en" %}Work in progress{% else %}En travaux{% endif %}</span>{% endif %}
     </p>
     <h3 class="post-card-title"><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h3>
     {% if include.post.excerpt %}<p class="post-card-excerpt">{{ include.post.excerpt }}</p>{% endif %}

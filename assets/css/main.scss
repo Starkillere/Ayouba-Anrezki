@@ -481,3 +481,13 @@ a:hover { text-decoration: underline; }
   padding: 0 0.25rem;
 }
 .annonce-fermer:hover { color: var(--color-text); }
+
+/* Vignette « En travaux » (front-matter en_travaux: true) */
+.badge-travaux {
+  background: #fff3cd;
+  color: #7a5a00;
+  border: 1px dashed #c9a227;
+}
+@media (prefers-color-scheme: dark) {
+  .badge-travaux { background: #3a3014; color: #f0d27a; border-color: #8a7024; }
+}

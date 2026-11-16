@@ -2,11 +2,13 @@
 title: "Un nouveau papier avec Saber Hamdaoui : existe-t-il une forme explicite pour le n-ième nombre premier ?"
 date: 2026-08-21
 ref: journal-nombres-premiers-explicites-draft
-category: journal
+category: recherche-maths
 tags: [nombres premiers, théorie des nombres, arithmétique, journal, work in progress]
 excerpt: "Avec Saber Hamdaoui : le n-ième nombre premier a-t-il une forme explicite ?"
-permalink: /fr/journal/formes-explicites-nombre-premier-en-cours/
+permalink: /fr/recherche-maths/formes-explicites-nombre-premier-en-cours/
 cover: covers/journal-nombres-premiers-explicites.svg
+redirect_from: [/fr/journal/formes-explicites-nombre-premier-en-cours/]
+en_travaux: true
 ---
 
 <div class="doc-card">

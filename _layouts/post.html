@@ -12,6 +12,7 @@ layout: default
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B %Y" }}</time>
       <a class="badge" href="{{ '/' | append: lang | append: '/' | append: catinfo.slug | append: '/' | relative_url }}">{{ catinfo.label }}</a>
+      {% if page.en_travaux %}<span class="badge badge-travaux">{% if lang == "en" %}Work in progress{% else %}En travaux{% endif %}</span>{% endif %}
     </p>
     <h1>{{ page.title }}</h1>
   </header>

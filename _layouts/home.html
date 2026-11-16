@@ -75,18 +75,17 @@ layout: default
     {% endif %}
   </div>
 
+  {% comment %}Bloc masqué tant que Journal et Entrepreneuriat sont vides.{% endcomment %}
+  {% if autre_posts.size > 0 %}
   <div class="home-block">
     <h3>{% if lang == "fr" %}Autre{% else %}Other{% endif %}</h3>
-    {% if autre_posts.size == 0 %}
-      <p class="empty-state">{% if lang == "fr" %}Rien pour l'instant.{% else %}Nothing yet.{% endif %}</p>
-    {% else %}
-      <ul class="mini-card-list">
-        {% for post in autre_posts %}
-          {% include mini-post-card.html post=post %}
-        {% endfor %}
-      </ul>
-    {% endif %}
+    <ul class="mini-card-list">
+      {% for post in autre_posts %}
+        {% include mini-post-card.html post=post %}
+      {% endfor %}
+    </ul>
   </div>
+  {% endif %}
 </section>
 
 <script defer src="{{ '/assets/js/github-repos.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>

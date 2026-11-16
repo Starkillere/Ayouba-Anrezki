@@ -2,11 +2,13 @@
 title: "Un papier sur les Transformers pour l'analyse d'image, tout début de rédaction"
 date: 2026-08-10
 ref: journal-transformers-vision-draft
-category: journal
+category: informatique-ia
 tags: [transformers, deep learning, intelligence artificielle, journal, work in progress]
 excerpt: "Un papier sur les Transformers et l'analyse d'image, tout juste commencé."
-permalink: /fr/journal/transformers-analyse-image-en-cours/
+permalink: /fr/informatique-ia/transformers-analyse-image-en-cours/
 cover: covers/journal-transformers-vision.svg
+redirect_from: [/fr/journal/transformers-analyse-image-en-cours/]
+en_travaux: true
 ---
 
 <div class="doc-card">

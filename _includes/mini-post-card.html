@@ -1,4 +1,5 @@
 <li class="mini-card">
   <a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a>
+  {% if include.post.en_travaux %}<span class="badge badge-travaux">{% if include.lang == "en" %}Work in progress{% else %}En travaux{% endif %}</span>{% endif %}
   <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: "%d %b %Y" }}</time>
 </li>
