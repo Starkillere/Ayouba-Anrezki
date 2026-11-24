@@ -5,7 +5,7 @@
     {% include nav.html %}
     <div class="header-actions">
       {% include lang-switcher.html %}
-      <a class="header-link" href="{{ '/cv.html' | relative_url }}">CV</a>
+      <a class="header-link" href="{{ '/' | append: lang | append: '/cv/' | relative_url }}">CV</a>
       <a class="header-link" href="{{ '/Contact.html' | relative_url }}">{% if lang == "fr" %}Contact{% else %}Contact{% endif %}</a>
     </div>
   </div>
